@@ -1,0 +1,70 @@
+body {
+    background-color: #1F2128 !important;
+    background-image: url("pattern.svg");
+    margin: 0;
+    padding-top: 25vh;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Space Mono', monospace !important;
+    overscroll-behavior: none;
+}
+
+.navbarborder1{
+    border-radius: 0px 0px 0px 10px;
+    background: rgb(204,75,201);
+    background: linear-gradient(107deg, rgba(204,75,201,1) 0%, rgba(133,88,207,1) 100%);
+    height: 12vh;
+    width: 50vh;
+}
+
+.card{
+    border: none !important;
+    background: #8558CF !important;
+    cursor: pointer;
+    padding: 0px !important;
+    color: #ffff !important;
+    font-size: 15px;
+    height: 400px !important;
+    
+}
+
+.card-body {
+    overflow: scroll;
+}
+  
+
+.card-body::-webkit-scrollbar {
+    display: none;
+}
+  
+
+.card-body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+  
+  
+.card {
+    transition: transform 0.3s ease;
+}
+  
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.nav-item a {
+    color: #ffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 20px !important;
+}
+
+.nav-item a {
+    outline: 1px solid transparent;
+}
+
+.nav-item a:hover {
+    outline: 1px solid #fff;
+    box-shadow: -5px 5px #8558CF;
+}

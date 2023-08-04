@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima&family=Montserrat&family=Quicksand&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Nar bar -->
+    <header>
+      <nav
+        class="navbar fixed-top navbar-expand justify-content-end"
+        style="padding-top: 0; padding-bottom: 0"
+      >
+        <ul class="navbar-nav align-items-center navbarborder1">
+          <li class="nav-item active">
+            <a 
+              ><div class="pagexplain">
+                Generate and enter a password to unlock Project and About
+                sections.
+              </div></a
+            >
+          </li>
+
+          <li class="nav-item active">
+            <a href="#" class="nav-link lockimg"
+              ><img src="Key_alt.svg" alt="locked" />
+            </a>
+          </li>
+        </ul>
+        <!-- button test -->
+
+        <!-- button end -->
+      </nav>
+    </header>
+    <!-- Nar bar End -->
+
+    <!-- Home Page -->
+    <div class="container-fluid no-margin">
+      <div class="row rowcontainer">
+        <div
+          class="col-12 col-md d-flex align-items-center" style="height: 201.59px;"
+        >
+          <h1 class="IamJoseph">
+            I am<br />Joseph
+          </h1>
+          <button class="buttonbtn" id="buttonfornext">
+            <img src="Expand_right_double_light.svg" alt="next text" class="nextabouttext">
+          </button>
+
+
+        </div>
+        
+        <div
+          class="col-12 col-md  passwordgene1 align-items-center d-flex justify-content-center"
+        >
+          <h5 class="displaygen" id="myInput">Generate Password</h5>
+          <button class="buttonbtn" id="buttonforcopy">
+            <img src="Copy.svg" alt="Click to generate" />
+          </button>
+          <button id="buttonfornewpass" class="generatepass buttonbtn">
+            <img src="Regroup.svg" alt="Generate a password" />
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-12 passvalidator  align-items-center d-flex justify-content-center"
+        >
+          <!-- <label for="unlockpage">Enter/Past Generated Password :</label> -->
+          <form id="myForm" action="index1.html"onsubmit="return validatorpass()">
+            <input
+              type="password"
+              id="unlockpage"
+              name="unlockpage"
+              placeholder="Enter/Past Generated Password.."
+            />
+            <button class="submittbtn" type="submit">
+              <img src="Send_hor_C.svg" alt="submit" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Home Page End -->
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
