@@ -6,6 +6,7 @@ const buttonfornewpass = document.getElementById("buttonfornewpass");
 
 function validatorpass() {
   let passsubmitted = document.forms["myForm"]["unlockpage"].value;
+  passsubmitted = passsubmitted.trim();
 
   if (passsubmitted === generatedPassword) {
     alert("Password matches");
