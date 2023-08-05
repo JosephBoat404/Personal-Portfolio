@@ -1,4 +1,4 @@
-let generatedPassword = "";
+let generatedPassword = "404";
 const inputElement = document.getElementById("myInput");
 const buttonfornext = document.getElementById("buttonfornext");
 const buttonforcopy = document.getElementById("buttonforcopy");
@@ -19,7 +19,7 @@ function validatorpass() {
 
 function handleNextButtonClick() {
   let element = document.querySelector(".IamJoseph");
-  if (element.innerHTML === "I am<br>Joseph") {
+  if (element.innerHTML.trim() === "I am<br>Joseph".trim()) {
     element.innerHTML =
       "A computer science <br> student with passion <br> for cybersecurity and <br/>web development";
     element.style.fontSize = "20px";
@@ -27,27 +27,25 @@ function handleNextButtonClick() {
     element.innerHTML = "I am<br>Joseph";
     element.style.fontSize = "84px";
   }
+  console.log("called");
 }
+let element = document.querySelector(".IamJoseph");
+console.log(element.innerHTML.trim());
 
 function handleCopyButtonClick() {
-  // Get the myInput element
   const myInput = document.getElementById("myInput");
-
-  // Get the innerHTML of the myInput element
-  const textToCopy = myInput.innerHTML;
-
-  // Copy the text to the clipboard
+  const textToCopy = myInput.innerHTML.replace(/;/g, "");
   navigator.clipboard.writeText(textToCopy);
-
-  // Alert the copied text
 }
+
+
 
 function handleNewPassButtonClick() {
   const passwordLength = 14;
   let password = "";
   const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const numbers = "0123456789";
-  const specialCharacters = "!@#$%^&*()_-+=[]{}|:;<>,.?/";
+  const specialCharacters = "!@#$%^*()_-+=[]{}|:,.?";
   const allCharacters = characters + numbers + specialCharacters;
 
   for (let i = 0; i < passwordLength; i++) {
@@ -58,7 +56,6 @@ function handleNewPassButtonClick() {
   inputElement.innerHTML = password;
   generatedPassword = password;
   console.log(password);
-  console.log(passwordvalidator);
 }
 
 buttonfornext.addEventListener("click", handleNextButtonClick);

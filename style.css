@@ -30,8 +30,12 @@ body {
     color: #ffffffc1;
     padding-left: 10px;
     cursor: pointer;
+
 }
 
+.pagexplain,.lockimg{
+    display:"";
+}
 .lockimg{
     padding: 0px !important;
 }
@@ -145,3 +149,19 @@ input[type=password]:focus {
     }
   }
 
+.nav-item {
+    color: #ffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 20px !important;
+    display: none;
+}
+
+.nav-item{
+    outline: 1px solid transparent;
+}
+
+.nav-item:hover {
+    outline: 1px solid #fff;
+    box-shadow: -5px 5px #8558CF;
+}
