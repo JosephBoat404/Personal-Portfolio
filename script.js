@@ -17,7 +17,7 @@ function validatorpass() {
   }
 }
 
-function handleNextButtonClick() {
+function NextButtonClick() {
   let element = document.querySelector(".IamJoseph");
   if (element.innerHTML.trim() === "I am<br>Joseph".trim()) {
     element.innerHTML =
@@ -32,7 +32,7 @@ function handleNextButtonClick() {
 let element = document.querySelector(".IamJoseph");
 console.log(element.innerHTML.trim());
 
-function handleCopyButtonClick() {
+function CopyButtonClick() {
   const myInput = document.getElementById("myInput");
   const textToCopy = myInput.innerHTML.replace(/;/g, "");
   navigator.clipboard.writeText(textToCopy);
@@ -40,7 +40,7 @@ function handleCopyButtonClick() {
 
 
 
-function handleNewPassButtonClick() {
+function NewPassButtonClick() {
   const passwordLength = 14;
   let password = "";
   const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -58,6 +58,6 @@ function handleNewPassButtonClick() {
   console.log(password);
 }
 
-buttonfornext.addEventListener("click", handleNextButtonClick);
-buttonforcopy.addEventListener("click", handleCopyButtonClick);
-buttonfornewpass.addEventListener("click", handleNewPassButtonClick);
+buttonfornext.addEventListener("click", NextButtonClick);
+buttonforcopy.addEventListener("click", CopyButtonClick);
+buttonfornewpass.addEventListener("click", NewPassButtonClick);
