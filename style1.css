@@ -74,7 +74,8 @@ body {
 
 .imgview1{
     box-shadow: -15px 15px 0 #5612c3;
-    width: 60vh;
+    padding: 0px !important;
+    width: fit-content !important;
 }
 
 .projecttitle{
