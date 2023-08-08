@@ -138,3 +138,8 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top {
     text-decoration: none;
     font-size: 1.3em;
 }
+
+.footerNav ul li a:hover{
+    color: #CC4BC9;
+    
+}
