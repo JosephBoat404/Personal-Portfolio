@@ -104,3 +104,37 @@ body {
 nav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top {
     background-color: #000000 !important;
 }
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 15px;
+    background-color: #fff;
+    margin: 10px;
+
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #CC4BC9;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
