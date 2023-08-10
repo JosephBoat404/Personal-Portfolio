@@ -9,10 +9,10 @@ function validatorpass() {
   passsubmitted = passsubmitted.trim();
 
   if (passsubmitted === generatedPassword) {
-    alert("Password matches");
+    // alert("Password matches");
     return true;
   } else {
-    alert("Password does not match");
+    // alert("Password does not match");
     return false;
   }
 }
@@ -38,8 +38,6 @@ function CopyButtonClick() {
   navigator.clipboard.writeText(textToCopy);
 }
 
-
-
 function NewPassButtonClick() {
   const passwordLength = 14;
   let password = "";
@@ -61,3 +59,29 @@ function NewPassButtonClick() {
 buttonfornext.addEventListener("click", NextButtonClick);
 buttonforcopy.addEventListener("click", CopyButtonClick);
 buttonfornewpass.addEventListener("click", NewPassButtonClick);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const buttonForCopy = document.getElementById("buttonforcopy");
+  const myToast = new bootstrap.Toast(document.getElementById("myToast"));
+
+  buttonForCopy.addEventListener("click", function () {
+    myToast.show();
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  function showInitialMessage() {
+    const initialToast = new bootstrap.Toast(
+      document.getElementById("initialToast")
+    );
+    initialToast.show();
+  }
+  showInitialMessage();
+
+  const buttonForCopy = document.getElementById("buttonforcopy");
+  const myToast = new bootstrap.Toast(document.getElementById("myToast"));
+
+  buttonForCopy.addEventListener("click", function () {
+    myToast.show();
+  });
+});

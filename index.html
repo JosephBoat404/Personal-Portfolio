@@ -16,60 +16,81 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Nar bar -->
-    <header>
-      <nav
-        class="navbar fixed-top navbar-expand justify-content-end"
-        style="padding-top: 0; padding-bottom: 0"
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+      <div
+        id="initialToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-bs-delay="4000"
       >
-        <ul class="navbar-nav align-items-center navbarborder1">
-          <li>
-            <a 
-              ><div class="pagexplain">
-                Generate and enter a password to unlock Project and About
-                sections.
-              </div></a
-            >
-          </li>
+        <div class="toast-header">
+          <strong class="me-auto">Welcome!</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">
+          Generate and enter a password to unlock Project and About sections.
+        </div>
+      </div>
+    </div>
 
-          <li>
-            <a href="#" class="nav-link lockimg"
-              ><img src="project icons/Key_alt.svg" alt="locked" />
-            </a>
-          </li>
-
-          <li><a class="nav-item" href="index.html">Home</a></li>
-          <li><a class="nav-item" href="index1.html">About</a></li>
-          <li><a class="nav-item" href="#">Project</a></li>
-        </ul>
-        <!-- button test -->
-
-        <!-- button end -->
-      </nav>
-    </header>
-    <!-- Nar bar End -->
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+      <div
+        id="myToast"
+        class="toast hide"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-bs-delay="2000"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Copied!</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Password copied to clipboard.</div>
+      </div>
+    </div>
 
     <!-- Home Page -->
     <div class="container-fluid no-margin">
       <div class="row rowcontainer">
         <div
-          class="col-12 col-md d-flex align-items-center" style="height: 201.59px;"
+          class="col-12 col-md d-flex align-items-center"
+          style="height: 201.59px"
         >
-          <h1 class="IamJoseph">
-            I am<br />Joseph
-          </h1>
+          <h1 class="IamJoseph">I am<br />Joseph</h1>
           <button class="buttonbtn" id="buttonfornext">
-            <img src="project icons/Expand_right_double_light.svg" alt="next text" class="nextabouttext">
+            <img
+              src="project icons/Expand_right_double_light.svg"
+              alt="next text"
+              class="nextabouttext"
+            />
           </button>
-
-
         </div>
-        
+
         <div
-          class="col-12 col-md  passwordgene1 align-items-center d-flex justify-content-center"
+          class="col-12 col-md passwordgene1 align-items-center d-flex justify-content-center"
         >
           <h5 class="displaygen" id="myInput">Generate Password</h5>
           <button class="buttonbtn" id="buttonforcopy">
@@ -83,10 +104,14 @@
 
       <div class="row">
         <div
-          class="col-12 passvalidator  align-items-center d-flex justify-content-center"
+          class="col-12 passvalidator align-items-center d-flex justify-content-center"
         >
           <!-- <label for="unlockpage">Enter/Past Generated Password :</label> -->
-          <form id="myForm" action="index1.html"onsubmit="return validatorpass()">
+          <form
+            id="myForm"
+            action="index1.html"
+            onsubmit="return validatorpass()"
+          >
             <input
               type="password"
               id="unlockpage"
