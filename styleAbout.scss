@@ -65,7 +65,7 @@ body {
 }
 
 .nav-item a:hover {
-    box-shadow: $secondary-color 0px 5px;
+    box-shadow:  #5612c3 -1px 1px 2px 1px;
     color: $font-color;
 }
 
@@ -92,9 +92,10 @@ body {
     height: 100px;;
 }
 
-nav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top {
-    background-color: #000000 !important;
+.navbar.bg-dark {
+    background: linear-gradient(270deg, #8558CF 0%, #C84CCA 49.23%, #6C5DD3 100%);
 }
+  
 
 .socialIcons{
     display:flex; 
