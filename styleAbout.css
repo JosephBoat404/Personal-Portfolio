@@ -24,6 +24,7 @@ body {
   height: 400px !important;
 }
 
+
 .card-body {
   overflow: scroll;
   -ms-overflow-style: none;
@@ -53,7 +54,7 @@ body {
 }
 
 .imgview1 {
-  box-shadow: -15px 15px 0 #5612c3;
+  box-shadow: #5612c3 0px 0px 10px 5px;
   padding: 0px !important;
   width: -moz-fit-content !important;
   width: fit-content !important;
@@ -68,13 +69,9 @@ body {
   margin: 0;
 }
 
-.EvenSpacing {
-  height: 112px;
-}
 
-.EvenSpacing2 {
-  height: 100px;
-}
+
+
 
 .navbar.bg-dark {
   background: linear-gradient(270deg, #8558CF 0%, #C84CCA 49.23%, #6C5DD3 100%);
@@ -87,13 +84,13 @@ body {
 .socialIcons a {
   text-decoration: none;
   padding: 15px;
-  background-color: #fff;
   margin: 10px;
 }
 .socialIcons a i {
   font-size: 2em;
   color: black;
   opacity: 0.9;
+  color: #fff;
 }
 .socialIcons a:hover {
   background-color: #CC4BC9;
@@ -102,13 +99,17 @@ body {
 .footerNav ul {
   display: flex;
   justify-content: center;
+  
 }
 .footerNav ul li a {
   color: #fff;
   margin: 20px;
   text-decoration: none;
   font-size: 1.3em;
+  
 }
+
+
 .footerNav ul li a:hover {
   color: #CC4BC9;
 }/*# sourceMappingURL=styleAbout.css.map */
