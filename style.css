@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Montserrat&family=Nanum+Gothic+Coding:wght@400;700&family=Quicksand&family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Agdasima&family=Montserrat&family=Nanum+Gothic+Coding:wght@400;700&family=Quicksand&family=Space+Mono&display=swap");
 body {
-  background-color: #1f2128 !important;
+  background-color: #000 !important;
   background: url("project images/pattern.svg");
   margin: 0;
   padding-top: 32vh;
-  font-family: 'Agdasima', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Nanum Gothic Coding', monospace;
-  font-family: 'Quicksand', sans-serif;
-  font-family: 'Space Mono', monospace;
-  overscroll-behavior-x: none;
+  font-family: "Agdasima", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Nanum Gothic Coding", monospace;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Space Mono", monospace;
 }
 
 .container-fluid {
@@ -32,7 +31,6 @@ body {
   background-position: center;
   background-size: cover;
 
-  
   margin-left: 0;
   margin-right: 0;
 }
@@ -46,7 +44,7 @@ body {
 }
 
 .displaygen {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7568627451);
   font-size: 22px;
   height: 10vh;
   width: 50vh;
@@ -54,9 +52,12 @@ body {
   justify-content: center;
   display: flex;
   margin: 0vh;
-  background: linear-gradient(270deg, rgba(133, 88, 207, 0.70) 50.45%, rgba(204, 75, 201, 0.70) 100%);
+  background: linear-gradient(
+    270deg,
+    rgba(133, 88, 207, 0.7) 50.45%,
+    rgba(204, 75, 201, 0.7) 100%
+  );
 }
-
 
 .buttonbtn {
   border: none;
@@ -66,15 +67,20 @@ body {
   padding: 0;
   height: 10vh;
   width: 10vh;
-  background: linear-gradient(270deg, rgba(133, 88, 207, 0.70) 50.45%, rgba(204, 75, 201, 0.70) 100%);
+  background: linear-gradient(
+    270deg,
+    rgba(133, 88, 207, 0.7) 50.45%,
+    rgba(204, 75, 201, 0.7) 100%
+  );
 }
-
 
 .buttonbtn:hover {
   background: rgb(103, 0, 255);
-  background: radial-gradient(circle,
-      rgb(103, 0, 255) 0%,
-      rgb(204, 75, 201) 100%);
+  background: radial-gradient(
+    circle,
+    rgb(103, 0, 255) 0%,
+    rgb(204, 75, 201) 100%
+  );
 }
 
 input[type="password"],
@@ -86,7 +92,11 @@ select {
   border-radius: 4px;
   color: #ffffff;
   box-sizing: border-box;
-  background: linear-gradient(270deg, rgba(133, 88, 207, 0.70) 50.45%, rgba(204, 75, 201, 0.70) 100%);
+  background: linear-gradient(
+    270deg,
+    rgba(133, 88, 207, 0.7) 50.45%,
+    rgba(204, 75, 201, 0.7) 100%
+  );
 }
 
 .passvalidator {
@@ -112,14 +122,11 @@ input[type="password"]:focus {
 }
 
 @media (max-width: 480px) {
-
   input[type="password"],
   select {
     width: 100%;
   }
 }
-
-
 
 .nav-item {
   color: white;
@@ -138,6 +145,26 @@ input[type="password"]:focus {
   box-shadow: -5px 5px #8558cf;
 }
 
+.brand {
+  padding: 8px 12px;
+  cursor: pointer;
+}
 
+@keyframes changeColor {
+  0% {
+    stroke: #cc4bc9;
+  }
+  50% {
+    stroke: #6c5dd3;
+  }
+  100% {
+    stroke: #1dfff5;
+  }
+}
+
+.svgname:hover .svglines,
+.svgname:hover {
+  animation: changeColor 1.5s linear infinite;
+}
 
 /*# sourceMappingURL=style.css.map */
