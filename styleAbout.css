@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Montserrat&family=Nanum+Gothic+Coding:wght@400;700&family=Quicksand&family=Space+Mono&display=swap');
 body {
   background-color: #1F2128 !important;
   background-image: url("project images/pattern.svg");
@@ -43,7 +44,7 @@ body {
 .nav-item a {
   color: #fff;
   text-decoration: none;
-  padding: 5px 10px;
+  margin: 0px 20px;
   font-size: 18px !important;
 }
 
@@ -73,7 +74,8 @@ body {
 
 
 .navbar.bg-dark {
-  background: linear-gradient(270deg, #8558CF 0%, #C84CCA 49.23%, #6C5DD3 100%);
+  background: #000 !important;
+  
 }
 
 .socialIcons {

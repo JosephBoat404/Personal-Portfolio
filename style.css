@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Montserrat&family=Nanum+Gothic+Coding:wght@400;700&family=Quicksand&family=Space+Mono&display=swap');
 body {
   background-color: #1f2128 !important;
   background: url("project images/pattern.svg");
   margin: 0;
   padding-top: 32vh;
-  font-family: "Space Mono", monospace, "Agdasima", sans-serif, "Montserrat",
-    sans-serif, "Quicksand", sans-serif !important;
+  font-family: 'Agdasima', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Space Mono', monospace;
   overscroll-behavior-x: none;
 }
 
