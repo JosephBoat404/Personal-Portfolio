@@ -1,6 +1,6 @@
 let generatedPassword = "404";
 const inputElement = document.getElementById("myInput");
-const buttonfornext = document.getElementById("buttonfornext");
+
 const buttonforcopy = document.getElementById("buttonforcopy");
 const buttonfornewpass = document.getElementById("buttonfornewpass");
 
@@ -56,7 +56,7 @@ function NewPassButtonClick() {
   console.log(password);
 }
 
-buttonfornext.addEventListener("click", NextButtonClick);
+
 buttonforcopy.addEventListener("click", CopyButtonClick);
 buttonfornewpass.addEventListener("click", NewPassButtonClick);
 
