@@ -43,7 +43,7 @@ body {
   cursor: pointer;
 }
 
-.displaygen {
+.displaygen,.displaygen1 {
   color: #FFFFFF;
   font-size: 22px;
   height: 10vh;
