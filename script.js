@@ -60,14 +60,7 @@ function NewPassButtonClick() {
 buttonforcopy.addEventListener("click", CopyButtonClick);
 buttonfornewpass.addEventListener("click", NewPassButtonClick);
 
-document.addEventListener("DOMContentLoaded", function () {
-  const buttonForCopy = document.getElementById("buttonforcopy");
-  const myToast = new bootstrap.Toast(document.getElementById("myToast"));
 
-  buttonForCopy.addEventListener("click", function () {
-    myToast.show();
-  });
-});
 
 document.addEventListener("DOMContentLoaded", function () {
   function showInitialMessage() {
@@ -78,11 +71,23 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   showInitialMessage();
 
-  const buttonForCopy = document.getElementById("buttonforcopy");
+
   const myToast = new bootstrap.Toast(document.getElementById("myToast"));
 
-  buttonForCopy.addEventListener("click", function () {
-    myToast.show();
-  });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  var copyButton = document.getElementById('buttonforcopy');
+  var tooltip = new bootstrap.Tooltip(copyButton, {
+    trigger: 'manual',
+    title: 'Copied!',
+    placement: 'top'
+  });
+
+  copyButton.addEventListener('click', function () {
+    tooltip.show();
+    setTimeout(function () {
+      tooltip.hide();
+    }, 2000);
+  });
+});
