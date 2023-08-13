@@ -20,10 +20,14 @@ let element = document.querySelector(".IamJoseph");
 console.log(element.innerHTML.trim());
 
 function CopyButtonClick(event) {
-  const myInput = event.target.closest(".col-md").querySelector(".displaygen");
+  const myInput = document.querySelector(".displaygen");
+  const myInput1 = document.querySelector(".displaygen1");
   const textToCopy = myInput.innerHTML.replace(/;/g, "");
-  navigator.clipboard.writeText(textToCopy);
+  const textToCopy1 = myInput1.innerHTML.replace(/;/g, "");
+  navigator.clipboard.writeText(textToCopy1);
 }
+
+
 
 function NewPassButtonClick(event) {
   const passwordLength = 14;
