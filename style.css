@@ -30,7 +30,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   margin-left: 0;
   margin-right: 0;
 }
@@ -51,7 +50,6 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
-
   margin: 1vh;
   background: rgba(30, 33, 40, 0.70);
   border: #FFFFFF solid 1px;
@@ -106,7 +104,6 @@ input[type="password"]:focus {
 .submittbtn {
   border: none;
   background: none;
-  padding: 0;
 }
 
 @media (max-width: 480px) {
