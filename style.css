@@ -109,7 +109,34 @@ input[type="password"]:focus {
 @media (max-width: 480px) {
   input[type="password"],
   select {
-    width: 100%;
+    width: 330px;
+    height: 82.398px;
+    margin: 8.440px;
+  }
+}
+
+@media (max-width: 480px) {
+  .svgname{
+    width:89px;
+    height:68px;
+    font-weight: lighter;
+
+
+  }
+}
+
+@media (max-width: 480px) {
+  body{
+    padding-top: 30vh;
+
+
+  }
+}
+
+@media (max-width: 480px) {
+  .IamJoseph{
+    font-size: 80px;
+    text-align: center;
   }
 }
 
