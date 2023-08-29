@@ -17,7 +17,6 @@ function validatorpass() {
 
 
 let element = document.querySelector(".IamJoseph");
-console.log(element.innerHTML.trim());
 
 function CopyButtonClick(event) {
   const myInput = document.querySelector(".displaygen");
@@ -57,16 +56,9 @@ newPassButtons.forEach(function (button) {
   button.addEventListener("click", NewPassButtonClick);
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  function showInitialMessage() {
-    const initialToast = new bootstrap.Toast(
-      document.getElementById("initialToast")
-    );
-    initialToast.show();
-  }
-  showInitialMessage();
-
-  const myToast = new bootstrap.Toast(document.getElementById("myToast"));
+document.addEventListener('DOMContentLoaded', function() {
+  var toast = new bootstrap.Toast(document.getElementById('liveToast'));
+  toast.show();
 });
 
 document.addEventListener('DOMContentLoaded', function () {

@@ -11,6 +11,7 @@ body {
   font-family: "Space Mono", monospace;
 }
 
+
 .container-fluid {
   padding-left: 0rem;
   padding-right: 0rem;
@@ -179,6 +180,23 @@ input[type="password"]:focus {
 .svgname:hover .svglines,
 .svgname:hover {
   animation: changeColor 1.5s linear infinite;
+}
+
+.toast{
+  background: linear-gradient(270deg, rgba(133, 88, 207, 0.70) 50.45%, rgba(204, 75, 201, 0.70) 100%);
+  color: #FFFFFF;
+}
+
+.toast-header{
+  background-color: #0000005e;
+  color: #FFFFFF;
+}
+
+.btn-close{
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 0%;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
