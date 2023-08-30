@@ -86,3 +86,18 @@ document.addEventListener('DOMContentLoaded', function() {
   var toast = new bootstrap.Toast(document.getElementById('liveToast'));
   toast.show();
 });
+
+ScrollReveal().reveal('.nameScrollI', {
+  distance: "80px",
+  origin: "top",
+  delay: 300,
+  duration: 500,
+  reset: true
+});
+ScrollReveal().reveal('.nameScrollJ', {
+  distance: "80px",
+  origin: "right",
+  delay: 800,
+  duration: 500,
+  reset: true
+});
