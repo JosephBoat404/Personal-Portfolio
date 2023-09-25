@@ -87,17 +87,10 @@ document.addEventListener('DOMContentLoaded', function() {
   toast.show();
 });
 
-ScrollReveal().reveal('.nameScrollI', {
-  distance: "80px",
-  origin: "top",
-  delay: 300,
-  duration: 500,
-  reset: true
-});
-ScrollReveal().reveal('.nameScrollJ', {
+
+ScrollReveal().reveal('.toast-container', {
   distance: "80px",
   origin: "right",
-  delay: 800,
-  duration: 500,
+  duration: 700,
   reset: true
 });
